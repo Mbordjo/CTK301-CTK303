@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1: Birthday Party!</title>
+    <link href="Basic.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>Assignment 1: Birthday Party!</h1>
+    <p>Here are two images representing songs of the week on March 14th (which is my birthday) on the year I was born and last year. Press on the images below to learn more about them! </p>
+    <div class="images">
+        <div class="img-card">
+            <img src="Candy Shop.jpg" alt="Song of the week on March 14th 2005">
+            <p class="img-text">
+            For the week of March 14, 2005, the #1 song on the Billboard Hot 100 was "Candy Shop" by 50 Cent featuring Olivia.
+            </p>
+        </div>
+        <div class="img-card">
+            <img src="Pink Pony Club.png" alt="Song of the week on March 14th 2025">
+            <p class="img-text">
+            For the week ending March 14, 2025, I found that Chappell Roan's "Pink Pony Club" was a major contender for the top spot, though some sources show Kendrick Lamar & SZA's "Luther" or other hits like Billie Eilish's "Birds of a Feather" also prominent around that time.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--This is some javascript for when you press on the images it will show up some more info about the image. I found this on the internet.-->
+<script>
+  document.querySelectorAll(".img-card img").forEach(img => {
+    img.addEventListener("click", () => {
+      img.nextElementSibling.classList.toggle("show");
+    });
+  });
+</script>
