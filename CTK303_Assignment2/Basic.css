@@ -1,0 +1,160 @@
+body {
+    background-color: aquamarine;
+}
+
+/* Welcome font wrapper */
+.welcome-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 150px auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* This is for the animated welcome font */
+
+#Animated_fonts {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Times New Roman", serif;
+}
+
+/* When hovering */
+#Animated_fonts:hover {
+  animation: fontCycle 2s infinite;
+}
+
+/* Font cycling animation */
+@keyframes fontCycle {
+  0% {
+    font-family: "bitcount single", serif;
+  }
+  20% {
+    font-family: "momo signature", sans-serif;
+  }
+  40% {
+    font-family: "bungee", monospace;
+  }
+  60% {
+    font-family: "noto sans symbols", serif;
+  }
+  80% {
+    font-family: "passero one", serif;
+  }
+  100% {
+    font-family: "Times New Roman", serif;
+  }
+}
+
+/* End of animated welcome font */
+
+/*Star to the left of welcome font */
+.star-left {
+  animation: starLeftMove 2s ease-out forwards;
+}
+
+@keyframes starLeftMove {
+  0% {
+    transform: translateY(-100px) translateX(-150px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+/* End of star to the left of welcome font */
+
+/* Star to the right of welcome font */
+.star-right {
+  animation: starRightMove 2s ease-out forwards;
+}
+
+@keyframes starRightMove {
+  0% {
+    transform: translateY(-100px) translateX(150px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(-360deg);
+    opacity: 1;
+  }
+}
+/* End of star to the right of welcome font */
+
+/* End of welcome font wrapper */
+
+/*Wavy Paragraph Font*/
+.wave-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: "Bungee", sans-serif;
+  white-space: nowrap;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: wave 1.6s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*End of Wavy Paragraph Font*/
+
+/* Record player wrapper */
+.record-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* Record image */
+.record {
+  width: 220px;
+  height: 220px;
+  background-image: url("record.png");
+  background-size: cover;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  animation-play-state: paused;
+}
+
+/* Spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Play button */
+#playButton {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  animation-play-state: running;
+}
+
+/* End of record player wrapper */

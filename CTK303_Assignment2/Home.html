@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link href="Basic.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Bungee&family=Momo+Signature&family=Noto+Sans+Symbols:wght@100..900&family=Passero+One&display=swap" rel="stylesheet">
+
+<body>
+    <div class="welcome-wrapper">
+        <div class="star star-left">
+            <img src="Star.png" alt="Star">
+        </div>
+        <div id="Animated_fonts">Welcome!</div>
+        <div class="star star-right">
+            <img src="Star.png" alt="Star">
+        </div>
+    </div>
+    <p class="wave-text">
+        Enjoy this fun music I found on Epidemic Sound by FLYIN called "Slam Dunk"
+    </p>
+    <div class="record-player">
+        <div class="record" id="record"></div>
+        <button id="playButton">▶ Play</button>
+        <audio id="music">
+            <source src="ES_Slam Dunk - FLYIN.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
+
+
+<!-- I got a little bit of help on the wave text animation from researching on the internet on how to make it work. I still have a lot left to learn about JavaScript -->
+<script>
+    // Wave text animation
+    const waveText = document.querySelector(".wave-text");
+    const text = waveText.innerText;
+    waveText.innerHTML = "";
+        [...text].forEach((char, i) => {
+        const span = document.createElement("span");
+        span.innerText = char === " " ? "\u00A0" : char;
+        span.style.animationDelay = `${i * 0.1}s`;
+        waveText.appendChild(span);
+    });
+
+    // Record player functionality
+    const music = document.getElementById("music");
+    const record = document.getElementById("record");
+    const button = document.getElementById("playButton");
+
+    button.addEventListener("click", () => {
+        if (music.paused) {
+            music.play();
+            record.style.animationPlayState = "running";
+            button.textContent = "⏸ Pause";
+        } else {
+            music.pause();
+            record.style.animationPlayState = "paused";
+            button.textContent = "▶ Play";
+        }
+    });
+</script>
