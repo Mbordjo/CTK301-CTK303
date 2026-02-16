@@ -1,0 +1,195 @@
+body {
+  background-color: aquamarine;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Welcome font wrapper */
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 80px auto 40px auto;
+}
+
+/* This is for the animated welcome font */
+
+#Animated_fonts {
+  font-size: clamp(32px, 8vw, 60px);
+  font-family: "Times New Roman", serif;
+}
+
+/* When hovering */
+#Animated_fonts:hover {
+  animation: fontCycle 2s infinite;
+}
+
+/* Font cycling animation */
+@keyframes fontCycle {
+  0% {
+    font-family: "bitcount single", serif;
+  }
+  20% {
+    font-family: "momo signature", sans-serif;
+  }
+  40% {
+    font-family: "bungee", monospace;
+  }
+  60% {
+    font-family: "noto sans symbols", serif;
+  }
+  80% {
+    font-family: "passero one", serif;
+  }
+  100% {
+    font-family: "Times New Roman", serif;
+  }
+}
+
+/* End of animated welcome font */
+
+/*Star to the left of welcome font */
+.star-left {
+  animation: starLeftMove 2s ease-out forwards;
+}
+
+@keyframes starLeftMove {
+  0% {
+    transform: translateY(-100px) translateX(-150px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+/* End of star to the left of welcome font */
+
+/* Star to the right of welcome font */
+.star-right {
+  animation: starRightMove 2s ease-out forwards;
+}
+
+@keyframes starRightMove {
+  0% {
+    transform: translateY(-100px) translateX(150px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(-360deg);
+    opacity: 1;
+  }
+}
+/* End of star to the right of welcome font */
+
+/* End of welcome font wrapper */
+
+/*Wavy Paragraph Font*/
+.wave-text {
+  margin: 40px auto;
+  font-size: clamp(16px, 3vw, 22px);
+  font-family: "Bungee", sans-serif;
+  text-align: center;
+  max-width: 90%;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation: wave 1.6s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*End of Wavy Paragraph Font*/
+
+/* Record player wrapper */
+.record-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* Record image */
+.record {
+  width: clamp(150px, 40vw, 220px);
+  height: clamp(150px, 40vw, 220px);
+  background-image: url("record.png");
+  background-size: cover;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  animation-play-state: paused;
+}
+
+/* Spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Play button */
+#playButton {
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  animation-play-state: running;
+}
+
+/* End of record player wrapper */
+
+/* NEW RESPONVISE DESIGN FOR DEVICES */
+/* Responsive design for Tablets */
+@media (min-width: 768px) {
+
+  body {
+    padding: 40px;
+  }
+
+  .welcome-wrapper {
+    gap: 40px;
+  }
+
+  .wave-text {
+    font-size: 20px;
+  }
+
+}
+/* End of responsive design for Tablets */
+/* Responsive design for Desktops */
+@media (min-width: 1200px) {
+
+  .welcome-wrapper {
+    margin-top: 120px;
+  }
+
+  .wave-text {
+    max-width: 700px;
+  }
+
+  .record-player {
+    margin-top: 120px;
+  }
+
+}
+/* End of responsive design for Desktops */
