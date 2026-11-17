@@ -1,0 +1,62 @@
+#top-nav {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    font-family: "Tilt Neon", sans-serif;
+}
+
+#top-nav form{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 10px;
+    box-shadow: 0 32px, 40px, -19px rgba(0, 0, 0, 0.25);
+    width: 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem, 2rem;
+    transition: width .5s;
+}
+
+#top-nav form svg{
+    color: black;
+    position: absolute;
+    right: 1.5rem;
+    top: 0px;
+}
+
+#top-nav a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.15s ease-in-out;
+}
