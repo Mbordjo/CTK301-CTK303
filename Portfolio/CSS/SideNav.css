@@ -154,3 +154,61 @@ nav .break {
 .dropdown-link:hover {
     color: inherit;
 }
+
+
+/* Sidebar item alignment */
+#sidebar > ul {
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar > ul > li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Align dropdown items with regular navigation items */
+#sidebar .dropdown {
+    padding-left: 0;
+}
+
+#sidebar .dropdown-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Keep icons and text aligned */
+#sidebar a,
+#sidebar .dropdown-btn {
+    display: flex;
+    align-items: center;
+}
+
+/* Keep dropdown arrows on the right */
+#sidebar .dropdown-btn {
+    margin-left: auto;
+    width: auto;
+    padding: 0.85em;
+}
+
+/* Dropdown submenu spacing */
+#sidebar .sub-menu {
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar .sub-menu a {
+    padding-left: 2em;
+}
+
+/* Align dropdown icons with Home and All Projects */
+#sidebar .dropdown {
+    padding-left: 0;
+}
+
+#sidebar .dropdown-header {
+    padding-left: 0.85em;
+    box-sizing: border-box;
+}

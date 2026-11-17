@@ -8,20 +8,22 @@ function toggleSidebar(){
   closeAllSubMenus()
 }
 
-function toggleSubMenu(button){
 
-  if(!button.nextElementSibling.classList.contains('show')){
-    closeAllSubMenus()
-  }
+function toggleSubMenu(button) {
 
-  button.nextElementSibling.classList.toggle('show')
-  button.classList.toggle('rotate')
+    // Find the dropdown containing the clicked button
+    const dropdown = button.closest(".dropdown");
 
-  if(sidebar.classList.contains('close')){
-    sidebar.classList.toggle('close')
-    toggleButton.classList.toggle('rotate')
-  }
+    // Find its submenu
+    const submenu = dropdown.querySelector(".sub-menu");
+
+    // Toggle the submenu visibility
+    const isOpen = submenu.classList.toggle("show");
+
+    // Rotate the dropdown arrow
+    button.classList.toggle("rotate", isOpen);
 }
+
 
 function closeAllSubMenus(){
   Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
