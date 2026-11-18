@@ -33,10 +33,10 @@ Making sidebar work
 
 #sidebar > ul > li:first-child{
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 16px;
+  justify-content: left;
   .logo{
     font-weight: 600;
+    font-size: larger;
   }
 }
 
