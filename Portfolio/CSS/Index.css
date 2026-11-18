@@ -64,3 +64,17 @@ main p{
 
   h2, p { margin-top: 1em }
 }
+
+#back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-clr, #62377c);
+  text-decoration: none;
+  font-family: var(--Tilt, sans-serif);
+  font-weight: bold;
+  letter-spacing: .02em;
+  transition: color .2s ease, transform .2s ease;
+}
+#back-btn span { font-size: 1.5rem; line-height: 1; }
+#back-btn:hover { color: var(--accent-clr, #a55795); transform: translateX(-3px); }

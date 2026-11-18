@@ -13,35 +13,11 @@
     <link rel="stylesheet" href="CSS/SideNav.css">
     <link rel="stylesheet" href="CSS/Phone.css">
     <link rel="stylesheet" href="CSS/hero.css">
-    <link rel="stylesheet" href="CSS/featured.css">
 
     <!-- IMPORTING JS -->
     <script type="text/javascript" src="JS/nav.js" defer></script>
-    <script type="text/javascript" src="JS/searchbar.js" defer></script>
     <script type="text/javascript" src="JS/hero.js" defer></script>
 
-    <!-- Tutorials used :D -->
-        <!--
-        For Side Bar Nav help -
-            https://youtu.be/R7b3OlEyqug?si=28GfemDogF6Ju9H1
-        -->
-        <!--
-        For Search bar
-            To make it interactive -- https://www.youtube.com/watch?v=N2zvLLOxLSg
-            to make it functional -- https://www.youtube.com/watch?v=m8yW3x442Yw
-        -->
-
-        <!-- 
-        For responsive hero section
-            ///
-        -->
-
-    <!-- All Resources used -->
-        <!--
-        SVGs - From Google Fonts Icons
-        Fonts - Google Fonts
-        ...
-        -->
     </head>
     <body>
         <nav id="sidebar">
@@ -182,22 +158,11 @@
             </ul>
         </nav>
         <div id="content">
-            <div class="hero-wave" aria-hidden="true">
-                <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path class="wave-back"d="M0,100 C180,180 300,20 520,90C740,160 850,30 1080,100C1250,150 1350,60 1440,100L1440,320 L0,320 Z"/>
-                    <path class="wave-middle"d="M0,130 C200,50 360,190 570,120C780,50 950,180 1150,110C1300,60 1380,130 1440,120L1440,320 L0,320 Z"/>
-                    <path class="wave-front" d="M0,160 C180,100 350,210 550,150 C750,90 900,200 1100,150 C1250,110 1350,170 1440,145 L1440,800 L0,800 Z"/>
-                </svg>
-            </div>
             <div class="hero-img">
                 <!--
                 Making search bar reactive and top nav
                 -->
                 <div id="top-nav">
-                    <form id="Search">
-                        <input type="text" placeholder="Search">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M19.6,21l-6.3-6.3q-0.75,0.6-1.72,0.95T9.5,16q-2.72,0-4.61-1.89Q3,12.23 3,9.5Q3,6.77 4.89,4.89T9.5,3t4.61,1.89T16,9.5q0,1.1-0.35,2.07T14.7,13.3L21,19.6L19.6,21ZM9.5,14q1.88,0 3.19-1.31T14,9.5T12.69,6.31T9.5,5T6.31,6.31T5,9.5t1.31,3.19T9.5,14Z"/></svg>
-                    </form>
 			        <div class="menu">
                         <ul>
                             <li><a href="about.html">About Me</a></li>
@@ -208,201 +173,18 @@
                 </div>
             <main>
                 <div id="hero">
-                    <h1 class="hero-title">A little bit of everything</h1>
-                    <h1 class="indent-line"> a lot of creativity</h1>
+                    <h1 class="hero-title">About Me</h1>
                     <p class="hero-text">
-                        Game Design ○ Web Design ○ Narrative ○ Sound
+                        Hi!! I'm Maggie Bordjoski
+                        A Game Designer, Web Developer, Storyteller and so much more!
+
+                        I love creating immersive worlds 
                     </p>
 
-                    <a href="#" class="hero-btn"><span>Explore My Work</span></a>
-                    <a href="#" class="hero-btn2"><span>About Me</span></a>
+                    <a href="#" class="hero-btn"><span>Resume</span></a>
                 </div>
             </div>
-            <section class="featured-section">
-                <div class="featured-header">
-                    <h2 class="category-name">
-                        <span class="star">✩</span> Featured Projects
-                    </h2>
-                    <a href="projects.html" class="view-more">
-                        View More →
-                    </a>
-                </div>
-                <div class="featured-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <a href="#">
-                            <img src="ASSETS/comingsoon.jpg" alt="Project 1">
-                        </a>
-                        <h3>Lost Souls</h3>
-                        <div class="filters">
-                            <span>Game Design</span>
-                            <span>Released</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <a href="#">
-                            <img src="ASSETS/comingsoon.jpg" alt="Project 2">
-                        </a>
-                        <h3>Project Two</h3>
-                        <div class="filters">
-                            <span>Web Design</span>
-                            <span>Personal</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <a href="#">
-                            <img src="ASSETS/comingsoon.jpg" alt="Project 3">
-                        </a>
-                        <h3>Project Three</h3>
-                        <div class="filters">
-                            <span>Narrative</span>
-                            <span>In Development</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <a href="#">
-                            <img src="ASSETS/comingsoon.jpg" alt="Project 4">
-                        </a>
-                        <h3>Project Four</h3>
-                        <div class="filters">
-                            <span>Sound Design</span>
-                            <span>Portfolio</span>
-                        </div>
-                    </div>
-                </div>
-    </section>
-        <section class="featured-section">
-
-                <div class="featured-header">
-                    <h2 class="category-name">
-                        <span class="star">✩</span> Released Works
-                    </h2>
-                    <a href="projects.html" class="view-more">
-                        View More →
-                    </a>
-                </div>
-
-        <div class="featured-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 1">
-                </a>
-                <h3>Lost Souls</h3>
-                <div class="filters">
-                    <span>Game Design</span>
-                    <span>Released</span>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 2">
-                </a>
-                <h3>Project Two</h3>
-                <div class="filters">
-                    <span>Web Design</span>
-                    <span>Personal</span>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 3">
-                </a>
-                <h3>Project Three</h3>
-                <div class="filters">
-                    <span>Narrative</span>
-                    <span>In Development</span>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 4">
-                </a>
-                <h3>Project Four</h3>
-                <div class="filters">
-                    <span>Sound Design</span>
-                    <span>Portfolio</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-        <section class="featured-section">
-
-                <div class="featured-header">
-                    <h2 class="category-name">
-                        <span class="star">✩</span> Recently Updated
-                    </h2>
-                    <a href="projects.html" class="view-more">
-                        View More →
-                    </a>
-                </div>
-
-        <div class="featured-grid">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 1">
-                </a>
-                <h3>Lost Souls</h3>
-                <div class="filters">
-                    <span>Game Design</span>
-                    <span>Released</span>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 2">
-                </a>
-                <h3>Project Two</h3>
-                <div class="filters">
-                    <span>Web Design</span>
-                    <span>Personal</span>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 3">
-                </a>
-                <h3>Project Three</h3>
-                <div class="filters">
-                    <span>Narrative</span>
-                    <span>In Development</span>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <a href="#">
-                    <img src="ASSETS/comingsoon.jpg" alt="Project 4">
-                </a>
-                <h3>Project Four</h3>
-                <div class="filters">
-                    <span>Sound Design</span>
-                    <span>Portfolio</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
+            <!--infinite scroll carosel with skills-->
             </main>
         </div>
     </body>
