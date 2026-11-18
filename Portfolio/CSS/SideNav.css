@@ -27,11 +27,6 @@ Making sidebar work
   text-wrap: nowrap;
 }
 
-#sidebar.close{
-  padding: 5px;
-  width: 60px;
-}
-
 #sidebar ul{
   list-style: none;
 }
@@ -211,61 +206,4 @@ nav .break {
 #sidebar .dropdown-header {
     padding-left: 0.85em;
     box-sizing: border-box;
-}
-
-
-
-/* =================================
-   COLLAPSED SIDEBAR
-================================= */
-
-#sidebar.close {
-    width: 60px;
-    min-width: 60px;
-    overflow: hidden;
-}
-
-/* Hide logo text */
-#sidebar.close .logo {
-    display: none;
-}
-
-/* Hide navigation text */
-#sidebar.close a span {
-    display: none;
-}
-
-/* Hide dropdown links and arrows */
-#sidebar.close .dropdown-header > .dropdown-link,
-#sidebar.close .dropdown-header > .dropdown-btn {
-    display: none;
-}
-
-/* Hide dropdown contents */
-#sidebar.close .sub-menu {
-    display: none;
-}
-
-/* Center regular navigation icons */
-#sidebar.close > ul > li > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .85em;
-}
-
-/* Center dropdown icons */
-#sidebar.close .dropdown-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: .85em;
-    gap: 0;
-}
-
-/* Prevent icons from shrinking */
-#sidebar.close svg {
-    flex-shrink: 0;
 }

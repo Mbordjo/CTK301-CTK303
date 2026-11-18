@@ -4,37 +4,59 @@
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
     gap: clamp(2rem, 5vw, 5rem);
-    padding: 7rem var(--pad) 5rem;
+    padding: 1;
 }
 
 .hero-title {
     font-family: var(--Playpen);
     font-weight: 400;
-    font-size: clamp(3.2rem 8.5vw 8rem);
+    font-size: 75px;
     line-height: 0.95;
     letter-spacing: -0.02em;
     color: var(--text-clr);
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.indent-line {
+    font-family: var(--Playpen);
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--text-clr);
+    padding-bottom: 100px;
+    padding-left: 215px;
 }
 
 .hero-text{
-    max-width: 26rem;
     margin-top: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     line-height: 1.6;
     color: var(--accent-clr);
+    padding-left: 60px;
 }
 
-.hero-btn{
+.hero-btn, .hero-btn2{
     display: inline-flex;
     text-decoration: none;
     align-items: center;
     gap: 0.75rem;
     padding: 1rem 1.6rem;
-    margin-top: 2.5rem;
+    margin-top: 50px;
     border: 1px solid var(--line-clr);
+    background-color: var(--hover-clr);
     border-radius: 900px;
     font-size: 0.95rem;
+    padding-left: 75px;
+    padding-right: 75px;
+    color: var(--text-clr);
     transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn{
+    margin-left: 50px;
 }
 
 .hero-btn:hover{
@@ -43,8 +65,11 @@
 }
 
 .hero-img {
-    height: min(70hv, 640px);
-    overflow: hidden;
-    border-radius: 4px;
-    background: "ASSETS/HERO/home.png" center / cover no-repeat;
+    height: 15%;
+    background-image: url("../ASSETS/HERO/home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: white;
 }
