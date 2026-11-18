@@ -1,0 +1,92 @@
+
+/* FEATURED PROJECTS SECTION */
+.featured-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff8fc;
+    border-radius: 18px;
+}
+
+/* SECTION TITLE */
+.category-name {
+    font-size: 22px;
+    color: #49305f;
+    margin: 0 0 18px 0;
+}
+
+.star {
+    color: #e6a4c7;
+    margin-right: 5px;
+}
+
+/* PROJECT GRID */
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+/* INDIVIDUAL PROJECT CARD */
+.project-card {
+    background-color: #fff0f6;
+    border: 1px solid #eac9df;
+    border-radius: 16px;
+    padding: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+/* PROJECT IMAGE */
+.project-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* PROJECT TITLE */
+.project-card h3 {
+    font-size: 15px;
+    color: #49305f;
+    margin: 10px 0 6px;
+}
+
+/* PROJECT CATEGORY TAGS */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.filters span {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: #e5d4f5;
+    color: #604578;
+}
+
+/* SECOND TAG COLOR */
+.filters span:nth-child(2) {
+    background-color: #f7d6e8;
+    color: #89516f;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+}

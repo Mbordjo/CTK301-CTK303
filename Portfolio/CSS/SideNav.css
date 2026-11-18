@@ -42,11 +42,16 @@ Making sidebar work
 
 /*Changing the color of the active page*/
 #sidebar ul li.active a{
+  background: var(--active-clr);
   color: var(--accent-clr);
 
   svg{
     fill: var(--accent-clr);
   }
+}
+
+#sidebar ul li:hover{
+  background-color: var(--hover-clr);
 }
 
 #sidebar a, #sidebar .dropdown-btn, #sidebar .logo{

@@ -65,7 +65,7 @@
 }
 
 .hero-img {
-    height: 15%;
+    min-height: 15%;
     background-image: url("../ASSETS/HERO/home.png");
     background-size: cover;
     background-position: center;

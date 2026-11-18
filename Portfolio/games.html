@@ -12,44 +12,19 @@
     <link rel="stylesheet" href="CSS/TopNav.css">
     <link rel="stylesheet" href="CSS/SideNav.css">
     <link rel="stylesheet" href="CSS/Phone.css">
+    <link rel="stylesheet" href="CSS/container.css">
 
     <!-- IMPORTING JS -->
     <script type="text/javascript" src="JS/nav.js" defer></script>
-    <script type="text/javascript" src="JS/searchbar.js" defer></script>
 
-    <!-- Tutorials used :D -->
-        <!--
-        For Side Bar Nav help -
-            https://youtu.be/R7b3OlEyqug?si=28GfemDogF6Ju9H1
-        -->
-        <!--
-        For Search bar
-            To make it interactive -- https://www.youtube.com/watch?v=N2zvLLOxLSg
-            To make it functional -- https://www.youtube.com/watch?v=TlP5WIxVirU
-        -->
-
-        <!-- 
-        For responsive hero section
-            ///
-        -->
-
-    <!-- All Resources used -->
-        <!--
-        SVGs - From Google Fonts Icons
-        Fonts - Google Fonts
-        ...
-        -->
     </head>
     <body>
         <nav id="sidebar">
             <ul>
                 <li>
                     <span class="logo">Maggie Bordjoski</span>
-                    <button onclick=toggleSidebar() id="toggle-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z"/></svg>
-                    </button>
                 </li>
-                <li class="active">
+                <li>
                     <a href="index.html">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z"/></svg>
                         <span>Home</span>
@@ -61,7 +36,7 @@
                         <span>All Projects</span>
                     </a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown" class="active">
                     <div class="dropdown-header">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M4.73,20q-1.5,0-2.56-1.07t-1.11-2.6q0-0.22 0.02-0.45t0.08-0.45l2.1-8.4Q3.6,5.68 4.68,4.84T7.13,4h9.75q1.38,0 2.45,0.84q1.07,0.84 1.42,2.19l2.1,8.4q0.05,0.23 0.09,0.46t0.04,0.46q0,1.52-1.09,2.59T19.28,20q-1.05,0-1.95-0.55q-0.9-0.55-1.35-1.5l-0.7-1.45q-0.13-0.25-0.38-0.38T14.38,16H9.63Q9.35,16 9.1,16.13T8.73,16.5l-0.7,1.45q-0.45,0.95-1.35,1.5T4.73,20ZM4.8,18q0.47,0 0.86-0.25t0.59-0.68l0.7-1.42q0.38-0.78 1.1-1.21T9.63,14h4.75q0.85,0 1.58,0.45t1.12,1.2l0.7,1.42q0.2,0.43 0.59,0.68T19.23,18q0.7,0 1.2-0.46t0.53-1.16q0,0.02-0.05-0.47L18.8,7.52q-0.18-0.68-0.7-1.1T16.88,6H7.13Q6.43,6 5.89,6.43T5.2,7.52L3.1,15.9q-0.05,0.15-0.05,0.45q0,0.7 0.51,1.17Q4.08,18 4.8,18Zm9.41-7.29Q14.5,10.43 14.5,10q0-0.43-0.29-0.71T13.5,9T12.79,9.29T12.5,10t0.29,0.71T13.5,11t0.71-0.29Zm2-2Q16.5,8.42 16.5,8q0-0.43-0.29-0.71T15.5,7T14.79,7.29T14.5,8q0,0.42 0.29,0.71T15.5,9t0.71-0.29Zm0,4Q16.5,12.43 16.5,12t-0.29-0.71T15.5,11t-0.71,0.29T14.5,12t0.29,0.71T15.5,13t0.71-0.29Zm2-2Q18.5,10.43 18.5,10q0-0.43-0.29-0.71T17.5,9T16.79,9.29T16.5,10t0.29,0.71T17.5,11t0.71-0.29ZM9.04,12.29q0.21-0.21 0.21-0.54v-1h1q0.33,0 0.54-0.21T11,10q0-0.33-0.21-0.54T10.25,9.25h-1v-1q0-0.32-0.21-0.54Q8.83,7.5 8.5,7.5q-0.32,0-0.54,0.21Q7.75,7.93 7.75,8.25v1h-1q-0.32,0-0.54,0.21T6,10t0.21,0.54t0.54,0.21h1v1q0,0.32 0.21,0.54T8.5,12.5q0.33,0 0.54-0.21ZM12,12Z"/></svg>
                         <a href="games.html" class="dropdown-link">
@@ -181,43 +156,51 @@
             </ul>
         </nav>
         <div id="content">
-            <!--
-                Making search bar reactive and top nav
-            -->
             <div id="top-nav">
-			    <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+			        <div class="menu">
+                        <ul>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div id="back-btn">
-                <button onclick="window.history.back()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#e3e3e3"><path d="M14,18L8,12l6-6l1.4,1.4L10.8,12l4.6,4.6L14,18Z"/></svg>
-                    <span>Back</span>
-                </button>
-            </div>
-
             <main>
-                <div id="hero">
-                    <img>
-                </div>
-                <div>
-                    ///
-                </div>
-                <div class="container">
-                    <h2>Hello World</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis porro iure quaerat aliquam! Optio dolorum in eum provident, facilis error repellendus excepturi enim dolor deleniti adipisci consectetur doloremque, unde maiores odit sapiente. Atque ab necessitatibus laboriosam consequatur eius similique, ex dolorum eum eaque sequi id veritatis voluptates perspiciatis, cupiditate pariatur.</p>
-                </div>
-                <div class="container">
-                    <h2>Example Heading</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aliquid corrupti, tenetur fuga magnam necessitatibus blanditiis quod sint excepturi laborum esse alias labore molestias adipisci, nostrum corporis ex maiores quis dolore quidem asperiores odio ad fugit eos! Delectus modi quas ipsa deleniti consequuntur nihil, hic in ipsum exercitationem blanditiis natus, ex, expedita eos. Excepturi quidem harum hic nam magnam deserunt illum quis dolorum eos ipsum ut natus sapiente sit, officia obcaecati assumenda tempore molestias? In fugiat iure laboriosam quasi, eum suscipit, harum autem saepe ut, soluta aspernatur ducimus eos magnam quidem officiis. Laboriosam nemo explicabo delectus, et quos vero cum?</p>
-                </div>
-                <div class="container">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repudiandae labore veniam reprehenderit voluptatum, laboriosam perferendis fuga, dolore quam quas nostrum totam sunt esse expedita. Vero distinctio omnis accusantium. Quisquam ullam saepe cupiditate magni numquam totam perspiciatis error velit, debitis veniam labore possimus aut sunt, reiciendis natus. Impedit provident voluptatum nulla fuga error a magnam, corporis natus aperiam fugit quod perferendis quos quaerat, numquam sequi doloribus tenetur dolorem voluptate deleniti, odio minus. Deserunt eius quasi odit voluptas unde voluptatum dicta cumque exercitationem soluta beatae porro distinctio, delectus officiis, nobis officia ullam necessitatibus, rem natus corrupti nam! Est, nihil molestias fugiat sed quae enim commodi expedita soluta tempore molestiae fuga adipisci rem esse voluptates quos, ut quasi sunt ad a perspiciatis ducimus maxime animi. Adipisci officia doloribus magni alias maiores ab quo, eos mollitia sint esse. Labore odio, architecto nihil quaerat soluta blanditiis impedit laudantium esse officiis dolorum dolore libero, id sequi minima incidunt eum facilis itaque distinctio. Voluptas doloremque minus reiciendis ex beatae laudantium cum sequi repellat blanditiis molestiae. Cumque, libero nulla! Sit, quisquam magni dolore consectetur odio impedit adipisci voluptas ab, laboriosam autem nihil nam est ipsa excepturi obcaecati eos neque! Omnis similique qui veritatis. Repellat magni dolorem, facilis eaque, harum molestias, delectus est adipisci laudantium velit optio blanditiis debitis? Tenetur totam maiores animi officiis eligendi expedita nemo corrupti distinctio. Cum libero soluta beatae doloribus sit, repellendus nobis vel obcaecati velit dolorem voluptate magnam inventore quas pariatur quam reprehenderit molestiae hic sunt dicta illo amet quis magni accusamus sequi? Vel quis, dolores iusto suscipit excepturi laboriosam repellat consectetur! Maiores deserunt, pariatur nesciunt consequuntur recusandae minima assumenda consequatur inventore natus debitis illo velit voluptatum necessitatibus qui aspernatur illum impedit magni dignissimos ea, molestias tempora corporis, asperiores iusto possimus. Libero expedita aspernatur officia totam dolorum culpa, minus, alias adipisci eligendi suscipit voluptates, magnam laudantium? Inventore cupiditate perspiciatis mollitia excepturi, voluptatibus ducimus expedita provident. Dicta, odit. Odio, qui repudiandae! Maiores dignissimos, magnam deleniti reprehenderit ex cum ea eveniet placeat quae, ad at perspiciatis nobis corporis doloribus voluptatem nulla aliquam sunt accusamus facere quaerat necessitatibus ipsa! Nam quisquam dicta minima commodi nostrum. Exercitationem necessitatibus optio cumque voluptate modi amet consequuntur similique ex inventore explicabo doloremque esse sed sequi nemo rem, nostrum ullam. Totam repellat ut ipsa quisquam rem, nulla, suscipit debitis atque earum quis voluptates quaerat exercitationem architecto repellendus placeat, tenetur incidunt distinctio consectetur reiciendis minima officiis aliquam? Ipsum sequi hic officia iste a. Blanditiis, dicta! Eveniet molestias ut natus odio fugiat cum necessitatibus, architecto, quo a quisquam autem porro explicabo ipsam, nostrum deserunt possimus expedita eum est corporis quibusdam cupiditate! Fugiat, quaerat saepe. Harum modi eligendi beatae alias fugiat. Nostrum cum nisi saepe dicta iste cupiditate, deserunt omnis, doloremque a distinctio eum rem adipisci ab? Sapiente, dicta ipsam blanditiis earum omnis necessitatibus temporibus, excepturi accusantium delectus quo quod iusto ad aliquam nemo ducimus ab nobis inventore sequi veritatis? Nulla, dolorem. Voluptas, obcaecati non facilis repellendus ratione officiis veritatis, modi culpa rerum placeat voluptatum quia ex? Officia quos dolorum repellat deserunt voluptas praesentium.</p>
+                <div class="category">
+                    <h2 class="category-name">Featured</h2>
+                    <div class="container">
+					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
+						<span class="text">Aiden's Portfolio</span>
+                        <div class="filters">
+                            <span>..</span>
+                            <span>...</span>
+                        </div>
+				    </div>
+                    <div class="container">
+					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
+						<span class="text">Aiden's Portfolio</span>
+                        <div class="filters">
+                            <span>..</span>
+                            <span>...</span>
+                        </div>
+				    </div>
+                    <div class="container">
+					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
+						<span class="text">Aiden's Portfolio</span>
+                        <div class="filters">
+                            <span>..</span>
+                            <span>...</span>
+                        </div>
+				    </div>
+                    <div class="container">
+					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
+						<span class="text">Aiden's Portfolio</span>
+                        <div class="filters">
+                            <span>..</span>
+                            <span>...</span>
+                        </div>
+				    </div>
                 </div>
             </main>
         </div>
