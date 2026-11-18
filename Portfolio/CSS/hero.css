@@ -46,5 +46,5 @@
     height: min(70hv, 640px);
     overflow: hidden;
     border-radius: 4px;
-    background-image: "ASSETS/HERO/comingsoon.jpg" center / cover no-repeat;
+    background: "ASSETS/HERO/home.png" center / cover no-repeat;
 }
