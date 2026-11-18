@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="CSS/TopNav.css">
     <link rel="stylesheet" href="CSS/SideNav.css">
     <link rel="stylesheet" href="CSS/Phone.css">
-    <link rel="stylesheet" href="CSS/container.css">
+    <link rel="stylesheet" href="CSS/featured.css">
 
     <!-- IMPORTING JS -->
     <script type="text/javascript" src="JS/nav.js" defer></script>
@@ -131,6 +131,7 @@
                             <li><a href="#">Pixel Art</a></li>
                             <li><a href="#">2D Rigging</a></li>
                             <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Passion Projects</a></li>
                         </div>
                     </ul>
                 </li>
@@ -156,7 +157,7 @@
             </ul>
         </nav>
         <div id="content">
-            <div id="top-nav">
+                <div id="top-nav">
 			        <div class="menu">
                         <ul>
                             <li><a href="about.html">About Me</a></li>
@@ -165,43 +166,59 @@
                         </ul>
                     </div>
                 </div>
-            </div>
             <main>
-                <div class="category">
-                    <h2 class="category-name">Featured</h2>
-                    <div class="container">
-					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
-						<span class="text">Aiden's Portfolio</span>
+            <!-- I want to add a icon, title, then a short blurb about this page there-->
+            <section class="showcase"> <!-- Make a new CSS for this -->
+                <div class="featured-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <a href="#">
+                            <img src="ASSETS/comingsoon.jpg" alt="Project 1">
+                        </a>
+                        <h3>Lost Souls</h3>
                         <div class="filters">
-                            <span>..</span>
-                            <span>...</span>
+                            <span>Game Design</span>
+                            <span>Released</span>
                         </div>
-				    </div>
-                    <div class="container">
-					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
-						<span class="text">Aiden's Portfolio</span>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <a href="#">
+                            <img src="ASSETS/comingsoon.jpg" alt="Project 2">
+                        </a>
+                        <h3>Project Two</h3>
                         <div class="filters">
-                            <span>..</span>
-                            <span>...</span>
+                            <span>Web Design</span>
+                            <span>Personal</span>
                         </div>
-				    </div>
-                    <div class="container">
-					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
-						<span class="text">Aiden's Portfolio</span>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <a href="#">
+                            <img src="ASSETS/comingsoon.jpg" alt="Project 3">
+                        </a>
+                        <h3>Project Three</h3>
                         <div class="filters">
-                            <span>..</span>
-                            <span>...</span>
+                            <span>Narrative</span>
+                            <span>In Development</span>
                         </div>
-				    </div>
-                    <div class="container">
-					    <a href="#"><img src="ASSETS/comingsoon.jpg" alt="..." width="200"></a>
-						<span class="text">Aiden's Portfolio</span>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <a href="#">
+                            <img src="ASSETS/comingsoon.jpg" alt="Project 4">
+                        </a>
+                        <h3>Project Four</h3>
                         <div class="filters">
-                            <span>..</span>
-                            <span>...</span>
+                            <span>Sound Design</span>
+                            <span>Portfolio</span>
                         </div>
-				    </div>
+                    </div>
                 </div>
+            </section>
             </main>
         </div>
     </body>
