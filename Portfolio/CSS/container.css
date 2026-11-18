@@ -1,4 +1,3 @@
-
 /* FEATURED PROJECTS SECTION */
 .featured-section {
     width: 100%;
@@ -78,15 +77,9 @@
     color: #89516f;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .featured-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
+/* FEATURED SECTIONS ABOVE WAVE */
 
-@media (max-width: 500px) {
-    .featured-grid {
-        grid-template-columns: 1fr;
-    }
+.featured-section {
+    position: relative;
+    z-index: 10;
 }

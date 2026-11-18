@@ -36,6 +36,11 @@ body{
   grid-template-columns: auto 1fr;
 }
 
+#content {
+    position: relative;
+    min-width: 0;
+}
+
 /*
 
 
